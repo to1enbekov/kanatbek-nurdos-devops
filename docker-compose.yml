@@ -1,0 +1,13 @@
+services:
+  student-app:
+    build: .
+    image: kanatbek-nurdos-devops:latest
+    container_name: kanatbek-nurdos-compose
+    ports:
+      - "8000:8000"
+    environment:
+      STUDENT_NAME: ${STUDENT_NAME:-Nurdos}
+      STUDENT_SURNAME: ${STUDENT_SURNAME:-Kanatbek}
+      STUDENT_GROUP: ${STUDENT_GROUP:-IT2-2310}
+      STUDENT_ID: ${STUDENT_ID:-37253}
+    restart: unless-stopped
