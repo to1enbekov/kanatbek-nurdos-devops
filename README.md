@@ -35,3 +35,7 @@ To run Compose instead, stop and remove the manually created container first, th
 - `docs/REPORT_TEMPLATE_RU.md`: draft report structure; insert authentic screenshots before submission.
 
 `.gitignore` excludes logs, backup, `.env` and private demo files.
+## Development checks
+
+Run automated tests before merging changes:
+python3 -m unittest discover -s tests -v
