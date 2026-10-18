@@ -1,0 +1,7 @@
+# Ignore logs and sensitive or local-only files
+*.log
+backup/
+.env
+private.txt
+__pycache__/
+*.pyc
